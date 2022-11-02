@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Optimus - NFT</title>
+		<link rel="shortcut icon" href="./images/optimus.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobile.css" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	</head>
+	<body id="top">
+		<header class="header" data-header>
+			<div class="container header-container">
+				<figure class="head-logo">
+					<a href="index.html">
+						<img src="./images/optimus.png" alt="logo" width="50" height="55" />
+					</a>
+				</figure>
+
+				<!-- hamburger icon -->
+				<button
+					class="nav-toggle-btn"
+					data-nav-toggle-btn
+					aria-label="Toggle Menu"
+				>
+					<ion-icon name="menu-outline" class="open">&#9745;</ion-icon>
+					<ion-icon name="close-outline" class="close">&#9746;</ion-icon>
+				</button>
+
+				<nav class="nav-container">
+					<ul class="navbar">
+						<li><a href="#marketplace" class="nav-links">Marketplace</a></li>
+						<li><a href="#drops" class="nav-links">Drops</a></li>
+						<li><a href="#creator" class="nav-links">Creator</a></li>
+						<li><a href="#community" class="nav-links">Community</a></li>
+					</ul>
+					<label for="header-search" class="search-bar">
+						<input
+							type="search"
+							name="search bar"
+							id="search-box"
+							class="search-box"
+							placeholder="Search"
+						/>
+						<input
+							type="submit"
+							value="&#10140;"
+							id="input-btn"
+							class="input-btn"
+						/>
+					</label>
+					<button class="btn fill-btn header-btn">Create wallet</button>
+				</nav>
+			</div>
+			<button id="change-theme" onclick="toggleTheme()">
+				dark <br />
+				mode
+			</button>
+		</header>
+		<main class="main">
+			<!-- first section -->
+			<section class="hero-section">
+				<div class="container hero-container">
+					<div class="hero-content">
+						<h1 class="hero-text">
+							<span class="hero-gradient">Discover</span> Collect and Sell Rare
+							<span class="hero-gradient">NFTs</span>
+						</h1>
+						<p class="hero-subtext">
+							The largest NFTs marketplace. Authentic and truly unique digital
+							creation. signed and issue by creators, made possible by
+							blockchain technology.
+						</p>
+					</div>
+					<figure class="hero-figure">
+						<img
+							src="./images/NFT_Wallet.png"
+							alt="hero image"
+							id="hero-image"
+							class="hero-image"
+						/>
+					</figure>
+				</div>
+			</section>
+			<ul class="wallet-list">
+				<div class="container wallet-container">
+					<li class="wallet coinbase">
+						<figure>
+							<img
+								src="./images/coinbase.png"
+								alt="coinbase logo"
+								width="40"
+								height="40"
+								class="coinbase-logo"
+							/>
+						</figure>
+						<h1 class="coinbase-text">coinbase</h1>
+					</li>
+					<li class="wallet metamask">
+						<figure>
+							<img
+								src="./images/metamask.png"
+								alt="metamask logo"
+								class="metamask-logo"
+							/>
+						</figure>
+						<h1 class="metamask-text">METAMASK</h1>
+					</li>
+					<li class="wallet trust">
+						<figure>
+							<img
+								src="./images/trust.png"
+								alt="trust logo"
+								width="40"
+								height="40"
+								class="trust-logo"
+							/>
+						</figure>
+						<h1 class="trust-text">Trust Wallet</h1>
+					</li>
+				</div>
+			</ul>
+			<!-- second section -->
+			<section class="marketplace" id="marketplace">
+				<div class="container market-container">
+					<div class="section-header">
+						<h2 class="section-sub-heading">NFT Marketplace</h2>
+						<h1 class="section-heading">HOT DROPS</h1>
+					</div>
+					<ul class="market-categories">
+						<li class="market-key">
+							<a href="#music" id="music" class="market">Music</a>
+						</li>
+						<li class="market-key">
+							<a href="#sport" id="sport" class="market">Sport</a>
+						</li>
+						<li class="market-key">
+							<a href="#art" id="art" class="market">Art</a>
+						</li>
+						<li class="market-key">
+							<a href="#photography" id="photography" class="market"
+								>Photography</a
+							>
+						</li>
+						<li class="market-key">
+							<a href="#more" id="more" class="market">More</a>
+						</li>
+					</ul>
+					<!-- art market -->
+					<ul class="market-list art" id="art-list">
+						<h2 class="section-sub-heading market-heading" id="art-heading">
+							Art Market
+						</h2>
+						<li>
+							<div href="#first-item" class="market-item" id="first-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image first-image"
+										id="first-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="first-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#second-item" class="market-item" id="second-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="devil"
+										class="item-image second-image"
+										id="second-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="second-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#third-item" class="market-item" id="third-item">
+								<figure class="item-figure">
+									<img src="./images/monster.png" alt="monster class="item-image
+									third-image" id="third-image" width="220" height="246" />
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="third-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fourth-item" class="market-item" id="fourth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="space monkey"
+										class="item-image fourth-image"
+										id="fourth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fourth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fifth-item" class="market-item" id="fifth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image fifth-image"
+										id="fifth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fifth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#sixth-item" class="market-item" id="sixth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image sixth-image"
+										id="sixth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="sixth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#seventh-item" class="market-item" id="seventh-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image seventh-image"
+										id="seventh-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="seventh-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#eight-item" class="market-item" id="eighth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="three head monster"
+										class="item-image eighth-image"
+										id="eighth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="eighth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+					</ul>
+					<!-- sport market -->
+					<ul class="market-list sport" id="sport-list">
+						<h2 class="section-sub-heading market-heading" id="sport-heading">
+							Sport Market
+						</h2>
+						<li>
+							<div href="#first-item" class="market-item" id="first-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image first-image"
+										id="first-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="first-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#second-item" class="market-item" id="second-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="devil"
+										class="item-image second-image"
+										id="second-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="second-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#third-item" class="market-item" id="third-item">
+								<figure class="item-figure">
+									<img src="./images/monster.png" alt="monster class="item-image
+									third-image" id="third-image" width="220" height="246" />
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="third-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fourth-item" class="market-item" id="fourth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="space monkey"
+										class="item-image fourth-image"
+										id="fourth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fourth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fifth-item" class="market-item" id="fifth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image fifth-image"
+										id="fifth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fifth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#sixth-item" class="market-item" id="sixth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image sixth-image"
+										id="sixth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="sixth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#seventh-item" class="market-item" id="seventh-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image seventh-image"
+										id="seventh-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="seventh-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#eight-item" class="market-item" id="eighth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="three head monster"
+										class="item-image eighth-image"
+										id="eighth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="eighth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+					</ul>
+					<!-- music market -->
+					<ul class="market-list music" id="music-list">
+						<h2 class="section-sub-heading market-heading" id="music-heading">
+							Music Market
+						</h2>
+						<li>
+							<div href="#first-item" class="market-item" id="first-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image first-image"
+										id="first-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="first-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#second-item" class="market-item" id="second-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="devil"
+										class="item-image second-image"
+										id="second-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="second-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#third-item" class="market-item" id="third-item">
+								<figure class="item-figure">
+									<img src="./images/monster.png" alt="monster class="item-image
+									third-image" id="third-image" width="220" height="246" />
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="third-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fourth-item" class="market-item" id="fourth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="space monkey"
+										class="item-image fourth-image"
+										id="fourth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fourth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fifth-item" class="market-item" id="fifth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image fifth-image"
+										id="fifth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fifth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#sixth-item" class="market-item" id="sixth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image sixth-image"
+										id="sixth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="sixth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#seventh-item" class="market-item" id="seventh-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image seventh-image"
+										id="seventh-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="seventh-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#eight-item" class="market-item" id="eighth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="three head monster"
+										class="item-image eighth-image"
+										id="eighth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="eighth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+					</ul>
+					<!-- photography market -->
+					<ul class="market-list photography" id="photography-list">
+						<h2
+							class="section-sub-heading market-heading"
+							id="photography-heading"
+						>
+							Photography Market
+						</h2>
+						<li>
+							<div href="#first-item" class="market-item" id="first-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image first-image"
+										id="first-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="first-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#second-item" class="market-item" id="second-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="devil"
+										class="item-image second-image"
+										id="second-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="second-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#third-item" class="market-item" id="third-item">
+								<figure class="item-figure">
+									<img src="./images/monster.png" alt="monster class="item-image
+									third-image" id="third-image" width="220" height="246" />
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="third-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fourth-item" class="market-item" id="fourth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="space monkey"
+										class="item-image fourth-image"
+										id="fourth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fourth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fifth-item" class="market-item" id="fifth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image fifth-image"
+										id="fifth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fifth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#sixth-item" class="market-item" id="sixth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image sixth-image"
+										id="sixth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="sixth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#seventh-item" class="market-item" id="seventh-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image seventh-image"
+										id="seventh-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="seventh-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#eight-item" class="market-item" id="eighth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="three head monster"
+										class="item-image eighth-image"
+										id="eighth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="eighth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+					</ul>
+					<!-- more market -->
+					<ul class="market-list more" id="more-list">
+						<h2 class="section-sub-heading market-heading" id="more-heading">
+							More
+						</h2>
+						<li>
+							<div href="#first-item" class="market-item" id="first-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image first-image"
+										id="first-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="first-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#second-item" class="market-item" id="second-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="devil"
+										class="item-image second-image"
+										id="second-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="second-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#third-item" class="market-item" id="third-item">
+								<figure class="item-figure">
+									<img src="./images/monster.png" alt="monster class="item-image
+									third-image" id="third-image" width="220" height="246" />
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="third-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fourth-item" class="market-item" id="fourth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="space monkey"
+										class="item-image fourth-image"
+										id="fourth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fourth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#fifth-item" class="market-item" id="fifth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/three-headed.png"
+										alt="three head monster"
+										class="item-image fifth-image"
+										id="fifth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Three headed</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="fifth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#sixth-item" class="market-item" id="sixth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/devil.png"
+										alt="three head monster"
+										class="item-image sixth-image"
+										id="sixth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Devil</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="sixth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#seventh-item" class="market-item" id="seventh-item">
+								<figure class="item-figure">
+									<img
+										src="./images/monster.png"
+										alt="three head monster"
+										class="item-image seventh-image"
+										id="seventh-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Monster</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="seventh-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+						<li>
+							<div href="#eight-item" class="market-item" id="eighth-item">
+								<figure class="item-figure">
+									<img
+										src="./images/nft-monkey.png"
+										alt="three head monster"
+										class="item-image eighth-image"
+										id="eighth-image"
+										width="220"
+										height="246"
+									/>
+								</figure>
+								<div class="item-container">
+									<div class="item-content">
+										<h2 class="item-heading">Space monkey</h2>
+										<p class="item-username">@merlinwizard</p>
+										<p class="item-price">0.46 ETH</p>
+									</div>
+									<div class="item-options">
+										<p class="item-features">...</p>
+										<img
+											src="./images/octa-diamond.png"
+											alt="octadiamond"
+											class="octa-diamond"
+											width="20"
+										/>
+									</div>
+								</div>
+								<button class="btn fill-btn item-btn" id="eighth-btn">
+									Collect now
+								</button>
+							</div>
+						</li>
+					</ul>
+					<button class="btn blank-btn">view more</button>
+				</div>
+			</section>
+			<!-- third section -->
+			<section class="drop" id="drops">
+				<div class="container drop-container">
+					<div class="drop-space">
+						<div class="drop-content">
+							<h1 class="drop-heading">Never miss a drop!</h1>
+							<p class="drop-text">
+								Subscribe to our super-exclusive drop list and be the first to
+								know about upcoming drop
+							</p>
+						</div>
+						<div class="drop-newsletter">
+							<label for="drop-email" class="search-bar drop-email-bar">
+								<input
+									type="email"
+									name="email"
+									id="drop-email"
+									class="search-box drop-email"
+									placeholder="Enter your email address"
+								/>
+							</label>
+							<button class="btn fill-btn drop-btn">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- fourth section -->
+			<section class="creator" id="creator">
+				<div class="container creator-container">
+					<div class="section-header">
+						<h2 class="section-sub-heading">How to be a creator</h2>
+						<h1 class="section-heading">Create and sell NFTs</h1>
+					</div>
+					<ul class="nft-sales">
+						<li class="sales create-nft">
+							<div class="sales-container">
+								<figure class="sales-figure">
+									<img
+										src="./images/paint-icon.png"
+										alt="paint brush"
+										width="65"
+									/>
+								</figure>
+								<div class="sales-content">
+									<h2 class="section-sub-heading sales-heading">
+										Create artwork
+									</h2>
+									<p class="sales-text">
+										Create your collection. Add social link & banner images
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="sales upload-nft">
+							<div class="sales-container">
+								<figure class="sales-figure">
+									<img
+										src="./images/image-icon.png"
+										alt="upload icon"
+										width="80"
+									/>
+								</figure>
+								<div class="sales-content">
+									<h2 class="section-sub-heading sales-heading">Upload</h2>
+									<p class="sales-text">
+										Upload your work, customize your NFTs with properties, stats
+										and unlockable content.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="sales list-nft">
+							<div class="sales-container">
+								<figure class="sales-figure">
+									<img src="./images/list.png" alt="list icon" width="70" />
+								</figure>
+								<div class="sales-content">
+									<h2 class="section-sub-heading sales-heading">Listing</h2>
+									<p class="sales-text">
+										Set up and choose between auctions, fixed-price listing and
+										decling prices
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="sales-buttons">
+						<button class="btn fill-btn sales-btn" id="sales-fill-btn">
+							Create now
+						</button>
+						<button class="btn blank-btn sales-btn" id="sales-blank-btn">
+							<a href="https://www.youtube.com" target="_blank">Watch videos</a>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- fifth section -->
+			<section class="top-creators" id="top-creators">
+				<div class="container top-creators-container">
+					<div class="section-header">
+						<h2 class="section-sub-heading">NFT Creator</h2>
+						<h1 class="section-heading">Top creators this week</h1>
+					</div>
+					<ul class="top-creators-list">
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="15"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+						<li class="creator-list blank-btn">
+							<div class="top-creator-container">
+								<figure>
+									<img
+										src="./images/godAbeg.png"
+										alt="creator image"
+										class="creator-image"
+										width="110"
+									/>
+								</figure>
+								<div class="creator-content">
+									<div class="creator-details">
+										<h3 class="creator-name">Merlinwizard</h3>
+										<p class="creator-text">
+											<span>
+												<img
+													src="./images/octa-diamond.png"
+													alt="creator icon"
+													class="creator-icon"
+													width="20"
+												/>
+											</span>
+											14,456.86
+										</p>
+									</div>
+									<p class="item-features">...</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="btn blank-btn creator-btn" id="creator-btn">
+						View rankings
+					</button>
+				</div>
+			</section>
+			<!-- sixth section -->
+			<section class="community" id="community">
+				<div class="container community-container">
+					<div class="drop-space">
+						<div class="drop-content">
+							<h1 class="drop-heading">Join our community</h1>
+							<p class="drop-text">
+								Meet our team, artists and collector platform updates,
+								accounments and more...
+							</p>
+						</div>
+						<button class="btn fill-btn community-btn">
+							<a href="https://www.discord.com" target="_blank">
+								Launch Discord
+								<span>
+									<img
+										src="./images/discord-white.png"
+										alt="white discord logo"
+										class="community-icon"
+									/>
+								</span>
+							</a>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer-container">
+				<div class="footer-upper-box">
+					<div class="footer-content-box">
+						<figure class="footer-figure">
+							<img
+								src="./images/optimus.png"
+								alt="footer logo"
+								class="footer-logo"
+								width="60"
+								height="65"
+							/>
+						</figure>
+						<div class="footer-text">
+							The largest NFTs marketplace. Authentic and truly unique digital
+							creation. signed and issue by creators, made possible by
+							blockchain technology.
+						</div>
+						<div class="footer-icon-box">
+							<a
+								href="https://www.discord.com"
+								class="footer-href"
+								target="_blank"
+							>
+								<figure class="footer-icon-figure">
+									<img
+										src="./images/discord-gradient.png"
+										alt="discord logo"
+										class="footer-icon"
+									/>
+								</figure>
+							</a>
+							<a
+								href="https://www.instagram.com"
+								class="footer-href"
+								target="_blank"
+							>
+								<figure class="footer-icon-figure">
+									<img
+										src="./images/instagram.png"
+										alt="instagram logo"
+										class="footer-icon"
+									/>
+								</figure>
+							</a>
+							<a
+								href="https://www.twitter.com"
+								class="footer-href"
+								target="_blank"
+							>
+								<figure class="footer-icon-figure">
+									<img
+										src="./images/twitter-gradient.png"
+										alt="twitter logo"
+										class="footer-icon"
+									/>
+								</figure>
+							</a>
+							<a
+								href="https://www.youtube.com"
+								class="footer-href"
+								target="_blank"
+							>
+								<figure class="footer-icon-figure">
+									<img
+										src="./images/youtube-gradient.png"
+										alt="youtube logo"
+										class="footer-icon"
+									/>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<div class="footer-nav-box">
+						<ul class="footer-nav-list">
+							<li class="footer-nav footer-nav-heading">Marketplace</li>
+							<li class="footer-nav">
+								<a href="#explore" class="footer-link" id="explore">Explore</a>
+							</li>
+							<li class="footer-nav">
+								<a href="#all-nfts" class="footer-link" id="all-nfts"
+									>All NFTs</a
+								>
+							</li>
+							<li class="footer-nav">
+								<a href="#collectibles" class="footer-link" id="collectibles"
+									>Collectibles</a
+								>
+							</li>
+							<li class="footer-nav">
+								<a
+									href="#virtual-worlds"
+									class="footer-link"
+									id="virtual-worlds"
+									>Virtual worlds</a
+								>
+							</li>
+						</ul>
+						<ul class="footer-nav-list">
+							<li class="footer-nav footer-nav-heading">Resources</li>
+							<li class="footer-nav">
+								<a href="#help-centers" class="footer-link" id="help-centers"
+									>Help centers</a
+								>
+							</li>
+							<li class="footer-nav">
+								<a href="#partners" class="footer-link" id="partners"
+									>Partners</a
+								>
+							</li>
+							<li class="footer-nav">
+								<a href="#blogs" class="footer-link" id="blogs">Blogs</a>
+							</li>
+							<li class="footer-nav">
+								<a href="#newsletter" class="footer-link" id="newsletter"
+									>Newsletter</a
+								>
+							</li>
+						</ul>
+						<ul class="footer-nav-list">
+							<li class="footer-nav footer-nav-heading">Company</li>
+							<li class="footer-nav">
+								<a href="#about-us" class="footer-link" id="about-us"
+									>About us</a
+								>
+							</li>
+							<li class="footer-nav">
+								<a href="#careers" class="footer-link" id="careers">Careers</a>
+							</li>
+							<li class="footer-nav">
+								<a href="#support" class="footer-link" id="support">Support</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="footer-credits">
+					<span
+						><a href="#https://www.github.com/joesef127" class="footer-creator"
+							>Hive Creative</a
+						></span
+					>
+					2022 All rights reserved
+				</p>
+			</div>
+		</footer>
+			<a href="#top" class="scrollUp" dataScrollUp aria-label="Go To Top">
+				<ion-icon name="chevron-up-outline" class="scroll-text">top</ion-icon>
+			</a>
+		<script src="script.js"></script>
+	</body>
+</html>

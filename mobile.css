@@ -1,0 +1,216 @@
+@import url(/assets/css/style.css);
+
+:root {
+  /* font-size */
+  --fsm-1: 12px;
+  --fsm-2: 15px;
+  --fsm-3: 22px;
+  --fsm-4: 50px;
+
+  /* line height */
+  --lhm-4: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  #change-theme {
+    left: 42%;
+  }
+
+  .header {
+    /* background-color: var(--viridian-green); */
+    padding-block: 20px;
+    height: 88px;
+    /* overflow: hidden; */
+    transition: 0.25s var(--cubic-out);
+    align-items: start;
+    position: relative;
+  }
+  
+  .header.active {
+    height: fit-content;
+    transition-delay: 0.35s;
+  }
+
+  .nav-toggle-btn.active .open,
+  .nav-toggle-btn .close {display: none;}
+  
+  .nav-toggle-btn .open,
+  .nav-toggle-btn.active .close {display: block;}
+  
+  .nav-toggle-btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transition: all var(--transition-2);
+  }
+
+  .nav-toggle-btn.active {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  
+  .nav-toggle-btn ion-icon {
+    color: var(--text-1);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    display: block;
+    padding: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li, .navbar .navlinks{
+    width: fit-content;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .header-btn {
+    width: 100%;
+  }
+
+  .nav-container {
+    /* display: block; */
+    width: 100%;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-1);
+  }
+
+  .header.active .nav-container {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hero-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    width: 90%;
+  }
+
+  .drop-newsletter {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .drop-email-bar {
+    width: 100%;
+  }
+
+  .drop-btn {
+    width: 100%;
+  }
+
+  .nft-sales {
+    flex-direction: column;
+  }
+
+  .sales {
+    width: 80%;
+  }
+
+  .top-creators-list {
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .creator-list {
+    width: 48%;
+    width: fit-content;
+  }
+
+  .top-creator-container {
+    width: max-content;
+    flex-flow: row;
+    /* justify-content: center; */
+  }
+
+  .creator-image {
+    width: 80px;
+  }
+
+  .creator-content {
+    flex-flow: row;
+  }
+
+  .creator-details {
+    padding: 0 5px;
+  }
+
+  .drop-space {
+    height: 100%;
+  }
+
+  .drop-heading {
+    font-size: var(--fsm-4);
+    line-height: var(--lhm-4);
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .hero-figure {
+    padding: 0;
+  }
+
+  .hero-image {
+    width: 300px;
+  }
+
+  .top-creators-list {
+    justify-content: center;
+  }
+
+  .footer-nav {
+    margin: 5px;
+  }
+
+  .footer-content-box {
+    width: 100%;
+  }
+
+  .footer-text, .footer-link, .footer-credits {
+    font-size: 12px;
+  }
+
+  .drop-heading {
+    font-size: 45px;
+  }
+
+  .section-heading {
+    font-size: var(--fsm-4);
+    line-height: var(--lhm-4);
+  }
+
+  .footer-nav-heading {
+    font-size: var(--fsm-2);
+  }
+}
